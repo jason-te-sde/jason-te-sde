@@ -75,6 +75,10 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/jason-te-sde/jason-te-sde/output/snake.svg" alt="Snake animation" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/jason-te-sde/jason-te-sde/blob/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/jason-te-sde/jason-te-sde/blob/output/github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
 
 ###
