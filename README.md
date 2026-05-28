@@ -115,12 +115,9 @@ contact:    jason.te.sde@gmail.com
 <p align="center">
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=jason-te-sde&theme=gruvbox_light&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak"/>
 </p>
-
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jason-te-sde&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jason-te-sde&theme=zenburn" alt="GitHub Profile Summary Card" />
 </p>
-
----
 
 ## 🐍 Contribution Snake
 
