@@ -36,7 +36,7 @@ committed run that produced it.
 | Project | What it is | A number you can check |
 | --- | --- | --- |
 | [**till**](https://github.com/jason-te-sde/till) | Full-stack game store on AWS: React, Spring Boot, Kafka through a transactional outbox, Aurora, Terraform on ECS Fargate | 8,000 concurrent shoppers at a **p99 of 134 ms**, down from 20.8 s, one measured bottleneck at a time |
-| [**keel**](https://github.com/jason-te-sde/keel) | Linearizable key-value store in Java: Raft from scratch, a deterministic fault-injection simulator, a linearizability checker | **6 bugs** its simulator and linearizability checker caught that hand-written tests structurally could not |
+| [**keel**](https://github.com/jason-te-sde/keel) | Linearizable key-value store in Java: Raft from scratch, a deterministic fault-injection simulator, a linearizability checker | **3 safety violations** a 10,000-seed simulation sweep found that hand-written tests could not reach ([seeds 1695, 1537, 2626](https://github.com/jason-te-sde/keel#bugs-the-tests-found)) |
 | [**shale**](https://github.com/jason-te-sde/shale) | Crash-safe LSM-tree storage engine in C++20 with no third-party runtime dependency | **200 rounds of a real `kill -9`** in CI; writes level with LevelDB ([0.98 to 0.99 of its ops/s](https://github.com/jason-te-sde/shale/blob/main/docs/benchmarks.md)) |
 | [**distributed-job-queue**](https://github.com/jason-te-sde/distributed-job-queue) | Job queue for Go services on PostgreSQL: leased at-least-once delivery, fencing tokens, weighted fair scheduling | **3,781 jobs/s** on one broker; under a 100,000-job flood a small tenant waits 18 ms at p99 instead of 28.5 s |
 
