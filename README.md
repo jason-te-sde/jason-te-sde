@@ -1,12 +1,12 @@
 <!-- ============ Header banner (animated gradient wave) ============ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=220&section=header&text=Jason%20Te&fontSize=80&fontColor=ffffff&fontAlignY=36&desc=Software%20Engineer%20%C2%B7%20Distributed%20Systems%20%C2%B7%20Backend%20%C2%B7%20AI%20Agents&descSize=18&descAlignY=58&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=220&section=header&text=Jason%20Te&fontSize=80&fontColor=ffffff&fontAlignY=36&desc=Software%20Engineer%20%C2%B7%20Distributed%20Systems%20%C2%B7%20AI%20Engineering&descSize=18&descAlignY=58&animation=fadeIn" width="100%"/>
 </p>
 
 <!-- ============ Typing animation subtitle ============ -->
 <p align="center">
   <a href="https://github.com/jason-te-sde">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8E2DE2&center=true&vCenter=true&width=640&lines=Building+distributed+systems+on+AWS;Crafting+AI+agents+with+Claude;Exploring+LLM+tool-use+%26+retrieval;M.S.+%40+Northeastern+University" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8E2DE2&center=true&vCenter=true&width=640&lines=Distributed+systems+you+can+crash-test;AI+systems+measured%2C+not+demoed;M.S.+CS+%40+Northeastern%2C+May+2027" alt="Typing SVG"/>
   </a>
 </p>
 
@@ -22,20 +22,32 @@
 
 ## 🧑‍💻 About Me
 
-```yaml
-name:       Jason Te
-role:       Software Engineer
-focus:
-  - Distributed Systems
-  - Backend Engineering
-  - AI Agents Development
-education:  M.S. @ Northeastern University
-contact:    jason.te.sde@gmail.com
-```
+I build systems whose claims can be checked: every number below links to the test, benchmark or
+committed run that produced it.
 
-- 🔭 Currently building distributed Java systems on AWS and LLM-powered agents with Claude
-- 🌱 Exploring agent tool-use, retrieval pipelines (ChromaDB), and observability with OpenTelemetry
-- 💬 Ask me about **Java + WebSocket**, **Kubernetes**, **FastAPI**, or **LLM agents with Claude**
+- 🎓 M.S. in Computer Science at Northeastern University (Seattle), graduating May 2027
+- 🔭 Looking for new-grad roles in backend, distributed systems and AI engineering
+- 📫 [jason.te.sde@gmail.com](mailto:jason.te.sde@gmail.com) · [portfolio](https://jason-te.vercel.app)
+
+---
+
+## 🧱 Distributed systems and storage
+
+| Project | What it is | A number you can check |
+| --- | --- | --- |
+| [**till**](https://github.com/jason-te-sde/till) | Full-stack game store on AWS: React, Spring Boot, Kafka through a transactional outbox, Aurora, Terraform on ECS Fargate | 8,000 concurrent shoppers at a **p99 of 134 ms**, down from 20.8 s, one measured bottleneck at a time |
+| [**keel**](https://github.com/jason-te-sde/keel) | Linearizable key-value store in Java: Raft from scratch, a deterministic fault-injection simulator, a linearizability checker | **6 bugs** its simulator and linearizability checker caught that hand-written tests structurally could not |
+| [**shale**](https://github.com/jason-te-sde/shale) | Crash-safe LSM-tree storage engine in C++20 with no third-party runtime dependency | **200 rounds of a real `kill -9`** in CI; writes level with LevelDB ([0.98 to 0.99 of its ops/s](https://github.com/jason-te-sde/shale/blob/main/docs/benchmarks.md)) |
+| [**distributed-job-queue**](https://github.com/jason-te-sde/distributed-job-queue) | Job queue for Go services on PostgreSQL: leased at-least-once delivery, fencing tokens, weighted fair scheduling | **3,781 jobs/s** on one broker; under a 100,000-job flood a small tenant waits 18 ms at p99 instead of 28.5 s |
+
+## 🤖 AI engineering
+
+| Project | What it is | A number you can check |
+| --- | --- | --- |
+| [**arxiv-research-agent**](https://github.com/jason-te-sde/arxiv-research-agent) | ReAct research agent over arXiv: two-stage retrieval, citations checked against the retrieved passages, streamed over FastAPI | Reranking adds **0.164 MRR@5** (95% interval +0.039 to +0.297); [every run committed](https://github.com/jason-te-sde/arxiv-research-agent/tree/main/eval/runs) |
+| [**timeseriesguard**](https://github.com/jason-te-sde/timeseriesguard) | Anomaly detection on the Server Machine Dataset, with leakage guards the code enforces | **0.70 event-level AUC-PR**, under a protocol where random scores get 0.04 (point adjust would give them an F1 of 0.77) |
+| [**nano-claude-code**](https://github.com/jason-te-sde/nano-claude-code) | Terminal coding agent for Anthropic, OpenAI-compatible and local models, with a model slot per role | Four permission modes with a sandbox; compaction can run on a cheap model while the main one stays strong |
+| [**cairn**](https://github.com/jason-te-sde/cairn) | Deterministic ML model registry in Java: immutable versions, content-addressed artifacts | **12 invariants** checked after every step of a seeded simulation |
 
 ---
 
@@ -79,7 +91,6 @@ contact:    jason.te.sde@gmail.com
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
-  .
 </p>
 
 **Databases**
