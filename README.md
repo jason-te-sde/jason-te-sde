@@ -46,7 +46,7 @@ committed run that produced it.
 | --- | --- | --- |
 | [**arxiv-research-agent**](https://github.com/jason-te-sde/arxiv-research-agent) | ReAct research agent over arXiv: two-stage retrieval, citations checked against the retrieved passages, streamed over FastAPI | Reranking adds **0.164 MRR@5** (95% interval +0.039 to +0.297); [every run committed](https://github.com/jason-te-sde/arxiv-research-agent/tree/main/eval/runs) |
 | [**timeseriesguard**](https://github.com/jason-te-sde/timeseriesguard) | Anomaly detection on the Server Machine Dataset, with leakage guards the code enforces | **0.70 event-level AUC-PR**, under a protocol where random scores get 0.04 (point adjust would give them an F1 of 0.77) |
-| [**nano-claude-code**](https://github.com/jason-te-sde/nano-claude-code) | Terminal coding agent for Anthropic, OpenAI-compatible and local models, with a model slot per role | Four permission modes with a sandbox; compaction can run on a cheap model while the main one stays strong |
+| [**nano-claude-code**](https://github.com/jason-te-sde/nano-claude-code) | Terminal coding agent for Anthropic, OpenAI-compatible and local models, with a model per role | An **MCP client** that pins every tool definition and asks again when one changes; a read-only explore sub-agent on its own model; 4,955 tests |
 | [**cairn**](https://github.com/jason-te-sde/cairn) | Deterministic ML model registry in Java: immutable versions, content-addressed artifacts | **12 invariants** checked after every step of a seeded simulation |
 
 ---
